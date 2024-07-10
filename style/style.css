@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-p {
+p, form label.dati, fieldset div {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
 }
 
-h1, h2, h3, li, button {
+h1, h2, h3, li, button, legend {
     font-family: "Caudex", serif;
 }
 
@@ -370,6 +370,68 @@ p#footIntes {
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+/* ---- FORM ---- */
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #FFBF00;
+    border-radius: 5px;
+    padding: .5rem 2%;
+}
+
+form label.dati, form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.dati input, form label.dati select, textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #FFBF00;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 90%;
+    max-width: 18rem;
+    background-color: rgba(255, 214, 218, 0.3) ;
+}
+
+form label.dati input:required {
+    border-left: #EA5DAB solid 6px;
+}
+
+form label.dati input:required:valid {
+    border-left: #FFBF00 solid 6px;
+}
+
+form label.dati, fieldset div {
+    font-size: 1em;
+}
+
+legend {
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#form, #formH3 {
+    text-align: center;
+}
+
+#formH3 {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-top: -15px;
+}
+
+fieldset div {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 480px) {
