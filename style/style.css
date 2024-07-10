@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+}
+
+h1, h2, h3, li, button {
+    font-family: "Caudex", serif;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+.logo {
+    max-height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    z-index: 2;
+}
+  
+html, body {
+    margin: 0;
+    height: 100%;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    height: 65px;
+    padding: 1em;
+}
+  
+ul.menu {
+    padding: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFD6DA;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+  
+.menu > li {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #EA5DAB;
+}
+
+.menu li:hover {
+    background-color: #000000;
+}
+
+.menu a:hover {
+    color: #EA5DAB;
+    margin-right: 20px;
+}
+  
+.menu-button-container {
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+#menu-toggle {
+    display: none;
+}
+  
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #EA5DAB;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+  
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+#menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+    height: 3em;
+    padding: 0.8em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+
+.header{
+    background-color: #FFD6DA;
+    display: flex;
+    align-items: center;
+}
+
+img.erikaPic, .header {
+    max-height: 40vw;
+}
+
+.erikaQuote {
+    margin-left: 100px;
+    line-height: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rectangle {
+    position: relative;
+    width: 45vw;
+    border: 2px solid #FFBF00;
+    border-radius: 5px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.picRect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.picRect img{
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.titolo {
+    position: absolute;
+    font-weight: bold;
+    color: #FFBF00;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    line-height: 7rem;
+    z-index: 1;
+}
+
+button {
+    opacity: 0;
+    color: #FFD6DA;
+    background-color: #EA5DAB;
+    box-shadow: 2px 2px 10px #FFD6DA;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.rectNascosto {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+.rectNascosto p {
+    align-items: center;
+    padding: 20px;
+    line-height: 2.3em;
+}
+
+.picRect:hover button {
+    opacity: 1;
+}
+
+.picRect:hover .rectNascosto {
+    opacity: 1;
+}
+
+.picRect:hover .titolo {
+    transition: .5s ease-out;
+    opacity: 0;
+}
+
+#linea {
+    margin: auto;
+    width: 75vw;
+    height: 2px;
+    background-color: #FFBF00;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#feshionDesigner {
+    padding: 40px;
+}
+
+.textFashion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 5vw;
+    row-gap: 20px;
+}
+
+.textFashion p {
+    line-height: 2.3em;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.textFashion h2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.textFashion a {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+img.erikaPM {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    max-width: 50vw;
+    border-radius: 5px;
+    box-shadow: 8px 8px 6px #FFD6DA;
+}
+
+.quoteDior {
+    background-color: #FFBF00;
+    padding: 5vw;
+    margin-top: 5vw;
+}
+
+h1#citazione {
+    text-align: center;
+}
+
+h2#autore {
+    text-align: right;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p#footIntes {
+    color: #FFD6DA;
+    font-size: 1em;
+}
+
+#socials {
+    display: flex;
+    align-items: center;
+}
+
+#socials img {
+    max-width: 50px;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rectangle {
+        position: relative;
+        width: 90vw;
+        border-radius: 5px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .picRect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .picRect img{
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .titolo {
+        position: absolute;
+        font-weight: bold;
+        color: #FFBF00;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        line-height: 1rem;
+        z-index: 3;
+    }
+    
+    button {
+        display: none;
+    }
+
+    .menu > li {
+        justify-content: center;
+    }
+}
