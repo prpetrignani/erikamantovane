@@ -15,6 +15,7 @@ h1 {
 
 h2{
     font-size: 2.5em;
+    color: #EA5DAB;
 }
 
 .logo {
@@ -329,6 +330,7 @@ h1#citazione {
 h2#autore {
     text-align: right;
     font-style: italic;
+    color: #000000;
 }
 
 footer {
@@ -420,6 +422,24 @@ form label.dati input:required:valid {
 
 form label.dati, fieldset div {
     font-size: 1em;
+}
+
+.designs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 8px 8px 6px #FFD6DA;
+}
+
+.designs img {
+    max-width: 40vw;
+    margin: auto;
+    padding: 20px;
+}
+
+#wedding img {
+    max-width: 25vw;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
