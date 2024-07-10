@@ -422,23 +422,115 @@ form label.dati, fieldset div {
     font-size: 1em;
 }
 
-@media only screen and (max-width: 1200px) {
-    h1 {
-        font-size: 2.8em;
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .rectNascosto p {
+        margin-top: 0;
+        padding: 0;
+        line-height: 1.7em;
     }
 
     .erikaQuote {
         margin-left: 40px;
-        line-height: 1.3em;
+        line-height: 1.2em;
+        margin-right: 10px;
     }
 
-    .rectNascosto p {
-        padding: 5px;
-        line-height: 1.8em;
+    h1 {
+        font-size: 2.8em;
+    }
+
+    .fashionSections h2 {
+        grid-column: 1 / 3;
+        text-align: center;
+    }    
+
+    .fashionSections img {
+        grid-row: 2 / 3;
+        margin-top: 30px;
     }
 }
 
-@media only screen and (max-width: 480px) {
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1.erikaQuote {
+        font-size: 2.8em;
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+
+    .rectangle {
+        margin-top: 50px;
+    }
+
+    .picRect {
+        height: 400px;
+    }
+
+    .rectNascosto p {
+        margin-top: 0;
+        padding: 5px;
+        line-height: 1.5em;
+    }
+
+    .titolo {
+        line-height: 3rem;
+        padding: 20px;
+    }
+
+    .linea {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    img.cardullo {
+        grid-column: 1/3;
+    }
+
+    h1#citazione {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .fashionSections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .fashionSections h2 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .fashionSections img {
+        margin: auto;
+        max-width: 80vw;
+    }
+
+    .fashionSections p {
+        padding-bottom: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    h1.erikaQuote {
+        margin-left: 8px;
+    }
+    
+    h1.erikaQuote, h1#citazione {
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -466,20 +558,70 @@ form label.dati, fieldset div {
     }
     
     .titolo {
-        position: absolute;
-        font-weight: bold;
-        color: #FFBF00;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.75);
-        line-height: 1rem;
-        z-index: 3;
+        line-height: 3rem;
     }
-    
-    button {
-        display: none;
+
+    .rectNascosto {
+        padding-top: 10px;
+    }
+
+    .rectNascosto p, .textFashion p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .menu > li {
         justify-content: center;
+    }
+
+    .textFashion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linea {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    img.cardullo {
+        display: block;
+        max-width: 60vw;
+        margin: auto;
+    }
+
+    img.erikaPM {
+        display: block;
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .fashionSections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .fashionSections h2 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .fashionSections img {
+        margin: auto;
+        max-width: 80vw;
+        margin-bottom: 25px;
+    }
+
+    .fashionSections p {
+        padding-bottom: 10px;
+        font-size: 1em;
+    }    
+
+    .corpoCentrale {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
