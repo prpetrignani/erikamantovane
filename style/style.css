@@ -57,6 +57,7 @@ ul.menu {
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
 
 .menu a {
@@ -233,7 +234,6 @@ input#invia{
     text-align: center;
     margin: auto;
 }
-
 
 .rectNascosto {
     position: absolute;
@@ -645,9 +645,16 @@ form label.dati, fieldset div {
         margin-bottom: 50px;
     }
 
+    #portoTito h2 {
+        text-align: center;
+    }
+
+    .portfolioTitle {
+        margin-top: 50px;
+    }
+
     .designs img {
         max-width: 80vw;
-        padding: 20px;
     }
     
     #wedding img {
