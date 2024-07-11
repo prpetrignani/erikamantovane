@@ -644,4 +644,13 @@ form label.dati, fieldset div {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
+    .designs img {
+        max-width: 80vw;
+        padding: 20px;
+    }
+    
+    #wedding img {
+        max-width: 40vw;
+    }
 }
