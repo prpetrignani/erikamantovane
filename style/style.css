@@ -5,7 +5,7 @@ p, form label.dati, fieldset div {
     font-size: 1.5em;
 }
 
-h1, h2, h3, li, button, legend {
+h1, h2, h3, li, button, legend, textarea {
     font-family: "Caudex", serif;
 }
 
@@ -189,6 +189,7 @@ main {
     border-radius: 5px;
     margin-top: 150px;
     text-align: center;
+    padding: 10px;
 }
 
 .picRect {
@@ -218,11 +219,11 @@ button, input#invia {
     color: #FFD6DA;
     background-color: #EA5DAB;
     box-shadow: 2px 2px 10px #FFD6DA;
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 input#invia{
@@ -237,6 +238,10 @@ input#invia{
 
 .rectNascosto {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: rgba(0, 0, 0, 0.75); /* Black see-through */
     color: #f1f1f1; 
     width: 100%;
@@ -250,9 +255,8 @@ input#invia{
 }
 
 .rectNascosto p {
-    align-items: center;
-    padding: 20px;
     line-height: 2.3em;
+    padding: 10px;
 }
 
 .picRect:hover button {
@@ -424,6 +428,10 @@ form label.dati, fieldset div {
     font-size: 1em;
 }
 
+label.dati:last-child {
+    margin-bottom: 20px;
+}
+
 .designs {
     display: flex;
     flex-direction: row;
@@ -436,6 +444,10 @@ form label.dati, fieldset div {
     max-width: 40vw;
     margin: auto;
     padding: 20px;
+}
+
+h2.portfolioTitle {
+    margin-top: 10vw;
 }
 
 #wedding img {
@@ -543,7 +555,7 @@ form label.dati, fieldset div {
     }
     
     h1.erikaQuote, h1#citazione {
-        font-size: 1.5em;
+        font-size: 1.4em;
         line-height: 1.3em;
     }
     
