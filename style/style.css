@@ -223,7 +223,7 @@ button, input#invia {
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 8px;
 }
 
 input#invia{
@@ -294,7 +294,7 @@ input#invia{
 }
 
 .textFashion p {
-    line-height: 2.3em;
+    line-height: 2em;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     margin-top: 0;
@@ -454,7 +454,7 @@ h2.portfolioTitle {
     max-width: 25vw;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .rectNascosto p {
         margin-top: 0;
         padding: 0;
@@ -483,7 +483,7 @@ h2.portfolioTitle {
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     h1.erikaQuote {
         font-size: 2.8em;
         margin-right: 10px;
@@ -545,9 +545,7 @@ h2.portfolioTitle {
     .fashionSections p {
         padding-bottom: 10px;
     }
-
 }
-
 
 @media only screen and (max-width: 767px) {
     h1.erikaQuote {
@@ -555,18 +553,27 @@ h2.portfolioTitle {
     }
     
     h1.erikaQuote, h1#citazione {
-        font-size: 1.4em;
+        font-size: 2.2em;
         line-height: 1.3em;
     }
     
     h2 {
+        font-size: 1.8em;
+    }
+
+    p {
         font-size: 1.3em;
+        line-height: 1.4em;
     }
 
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    button {
+        font-size: 1.3em;
     }
     
     .rectangle {
@@ -598,8 +605,6 @@ h2.portfolioTitle {
     }
 
     .rectNascosto p, .textFashion p {
-        font-size: 1em;
-        line-height: 1.4em;
         margin-top: 0;
         padding-top: 0;
     }
@@ -649,7 +654,6 @@ h2.portfolioTitle {
 
     .fashionSections p {
         padding-bottom: 10px;
-        font-size: 1em;
     }    
 
     .corpoCentrale {
@@ -661,15 +665,30 @@ h2.portfolioTitle {
         text-align: center;
     }
 
-    .portfolioTitle {
-        margin-top: 50px;
-    }
-
     .designs img {
         max-width: 80vw;
     }
     
     #wedding img {
         max-width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1.erikaQuote, h1#citazione {
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+
+    h1.erikaQuote {
+        margin-left: 10px;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    button {
+        font-size: 1.2em;
     }
 }
