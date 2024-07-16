@@ -485,7 +485,6 @@ h2.portfolioTitle {
 
 @media screen and (max-width: 1024px) {
     h1.erikaQuote {
-        font-size: 2.8em;
         margin-right: 10px;
         margin-left: 50px;
     }
@@ -524,6 +523,11 @@ h2.portfolioTitle {
 
     h2 {
         font-size: 2em;
+    }
+
+    
+    #portoTito h2 {
+        text-align: center;
     }
 
     .fashionSections {
@@ -661,10 +665,6 @@ h2.portfolioTitle {
         margin-bottom: 50px;
     }
 
-    #portoTito h2 {
-        text-align: center;
-    }
-
     .designs img {
         max-width: 80vw;
     }
@@ -676,7 +676,7 @@ h2.portfolioTitle {
 
 @media only screen and (max-width: 480px) {
     h1.erikaQuote, h1#citazione {
-        font-size: 1.5em;
+        font-size: 1.8em;
         line-height: 1.3em;
     }
 
@@ -685,7 +685,7 @@ h2.portfolioTitle {
     }
     
     h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     
     button {
